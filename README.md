@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+git clone git@github.com:cthanh2803/rails-devise.git
 
-Things you may want to cover:
+cd rails-devise
 
-* Ruby version
+docker-compose build
 
-* System dependencies
+docker-compose run web rails db:create
 
-* Configuration
+docker-compose run web rails db:migrate
 
-* Database creation
+docker-compose up
 
-* Database initialization
 
-* How to run the test suite
+Sign up: localhost:3000/users/sign_up
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Login: localhost:3000/users/sign_in
